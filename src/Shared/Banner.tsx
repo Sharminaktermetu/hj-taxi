@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "next/image";
-import van from "../assets/van.jpg";
+import { FaWhatsapp } from "react-icons/fa"; // Importing icons from react-icons
+import { MdAddIcCall } from "react-icons/md";
 
 const Banner = () => {
   return (
@@ -36,6 +36,29 @@ const Banner = () => {
             <source src="/van.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+        </div>
+
+        {/* Floating Call and WhatsApp icons */}
+        <div className="absolute bottom-20 right-4 space-y-4 flex flex-col items-center">
+          {/* WhatsApp Icon */}
+          <a
+            href="https://wa.me/your-phone-number" // Replace with your WhatsApp link
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp
+              size={40}
+              className="bg-[#20A161] text-white p-1 rounded-full"
+            />
+          </a>
+
+          {/* Call Icon */}
+          <a
+            href="tel:+your-phone-number" // Replace with your phone number
+           
+          >
+            <MdAddIcCall size={40} className=" text-white p-1.5 bg-blue-500 rounded-full" />
+          </a>
         </div>
       </section>
     </>
