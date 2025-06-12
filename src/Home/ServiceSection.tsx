@@ -16,7 +16,7 @@ const ServiceSection = () => {
   ]
 
   return (
-    <section className="py-20 bg-pink-50 text-center">
+    <section className="py-20 bg-pink-50 text-center px-6">
       <h2 className="text-2xl md:text-3xl font-bold">Nos prestations de transport</h2>
       <p className="mt-2 text-gray-500">
         Des solutions adaptées à tous vos trajets : médicaux, privés et longue distance.
@@ -48,7 +48,7 @@ const ServiceSection = () => {
           
         ))}
       </div>
-      <div className="mt-10 flex justify-center flex-wrap gap-6 max-w-5xl mx-auto">
+      <div className="mt-10 flex justify-center flex-wrap gap-6 max-w-5xl mx-auto ">
   {services.slice(3, 5).map((service, i) => (
     <div key={i} className="bg-white shadow rounded-lg p-6 text-left w-full sm:w-[300px]">
       <div className="flex">
